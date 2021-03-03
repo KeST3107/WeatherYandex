@@ -1,0 +1,16 @@
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\bin\Debug\net5.0\Troelsen.exe
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\bin\Debug\net5.0\Troelsen.deps.json
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\bin\Debug\net5.0\Troelsen.runtimeconfig.json
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\bin\Debug\net5.0\Troelsen.runtimeconfig.dev.json
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\bin\Debug\net5.0\Troelsen.dll
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\bin\Debug\net5.0\ref\Troelsen.dll
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\bin\Debug\net5.0\Troelsen.pdb
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.csprojAssemblyReference.cache
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.AssemblyInfoInputs.cache
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.AssemblyInfo.cs
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.csproj.CoreCompileInputs.cache
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.dll
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\ref\Troelsen.dll
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.pdb
+C:\Users\KeST3107\RiderProjects\Troelsen\Troelsen\obj\Debug\net5.0\Troelsen.genruntimeconfig.cache
