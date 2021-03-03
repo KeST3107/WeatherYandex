@@ -4,19 +4,37 @@
     <projectFile>WeatherBot/WeatherBot.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a307979d-b702-4aee-866c-7238ae51c859" name="Default Changelist" comment="New" />
+    <list default="true" id="a307979d-b702-4aee-866c-7238ae51c859" name="Default Changelist" comment="New">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WeatherYandex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WeatherYandex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/ref/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/ref/WeatherBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/ref/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/ref/WeatherBot.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/233/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/WeatherBot/Program.cs" />
       <option value="$PROJECT_DIR$/WeatherBot/JSONClasses/Hour.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pDOwBUne8ey88Ch3Llx9PXUZwh" />
@@ -26,8 +44,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498155" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3195572" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.31960997" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -64,7 +82,7 @@
       <updated>1614714432834</updated>
       <workItem from="1614714444773" duration="482000" />
       <workItem from="1614714960266" duration="921000" />
-      <workItem from="1614750874130" duration="968000" />
+      <workItem from="1614750874130" duration="13241000" />
     </task>
     <task id="LOCAL-00001" summary="New">
       <created>1614715574238</created>
@@ -73,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614715574238</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Main">
+      <created>1614751875279</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614751875279</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,7 +109,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="VkApi" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -94,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="New" />
-    <option name="LAST_COMMIT_MESSAGE" value="New" />
+    <MESSAGE value="Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main" />
   </component>
 </project>
