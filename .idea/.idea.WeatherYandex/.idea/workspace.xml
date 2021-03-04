@@ -4,9 +4,7 @@
     <projectFile>WeatherBot/WeatherBot.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a307979d-b702-4aee-866c-7238ae51c859" name="Default Changelist" comment="New">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WeatherYandex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WeatherYandex/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a307979d-b702-4aee-866c-7238ae51c859" name="Default Changelist" comment="New" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +75,7 @@
       <workItem from="1614714960266" duration="921000" />
       <workItem from="1614750874130" duration="14360000" />
       <workItem from="1614845654677" duration="88000" />
-      <workItem from="1614845774345" duration="301000" />
+      <workItem from="1614845774345" duration="924000" />
     </task>
     <task id="LOCAL-00001" summary="New">
       <created>1614715574238</created>
@@ -100,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614799299603</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Вк запрос на постинг записи в группу, и мелкие доработки">
+      <created>1614846597686</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614846597686</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
