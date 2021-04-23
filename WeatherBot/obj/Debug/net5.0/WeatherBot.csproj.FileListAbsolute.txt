@@ -30,3 +30,5 @@ C:\Users\KeST3107\RiderProjects\WeatherYandex\WeatherBot\obj\Debug\net5.0\Weathe
 C:\Users\KeST3107\RiderProjects\WeatherYandex\WeatherBot\obj\Debug\net5.0\ref\WeatherBot.dll
 C:\Users\KeST3107\RiderProjects\WeatherYandex\WeatherBot\obj\Debug\net5.0\WeatherBot.pdb
 C:\Users\KeST3107\RiderProjects\WeatherYandex\WeatherBot\obj\Debug\net5.0\WeatherBot.genruntimeconfig.cache
+C:\Users\KeST3107\RiderProjects\WeatherYandex\WeatherBot\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\KeST3107\RiderProjects\WeatherYandex\WeatherBot\obj\Debug\net5.0\WeatherBot.csproj.CopyComplete

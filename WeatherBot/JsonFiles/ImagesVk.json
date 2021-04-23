@@ -1,0 +1,19 @@
+{
+  "ImagesResponse": {
+    "ActivatedType": {
+      "ForecastNotActiated": "photo-202995818_457239105",
+      "ForecastOneFive": "photo-202995818_457239098",
+      "ForecastOneEight": "photo-202995818_457239099",
+      "ForecastOneEleven": "photo-202995818_457239100",
+      "FactNotActiated": "photo-202995818_457239104",
+      "FactOneFive": "photo-202995818_457239093",
+      "FactneEight": "photo-202995818_457239094",
+      "FactOneEleven": "photo-202995818_457239095"
+    },
+    "DayType": {
+      "Weekend": "photo-202995818_457239101",
+      "Holiday": "photo-202995818_457239103",
+      "Vacation": "photo-202995818_457239102"
+    }
+  }
+}

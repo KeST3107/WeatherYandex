@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "x4VOl/OkakZrIHqJCvM6F302zWIqkzGIKzfz+ftVAaPIRXZNmLHNUlBjdd1sG4TTURoB6i3IImW34cMykWKy4A==",
+  "dgSpecHash": "9hUfrKtjiBdlpCpNui1gQL3S6GUzW61XIvw1I3rnIsNDv5Tp573PZkBUIhuF4DQ6IMRbJu0Jr+GmRfBFb1O8Jg==",
   "success": true,
   "projectFilePath": "C:\\Users\\KeST3107\\RiderProjects\\WeatherYandex\\WeatherBot\\WeatherBot.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KeST3107\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

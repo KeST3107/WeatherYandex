@@ -4,34 +4,156 @@
     <projectFile>WeatherBot/WeatherBot.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a307979d-b702-4aee-866c-7238ae51c859" name="Default Changelist" comment="New" />
+    <list default="true" id="a307979d-b702-4aee-866c-7238ae51c859" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Enums/ActivatedType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Enums/DayType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Http/HttpRequestSender.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Interfaces/IHaveWeatherState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/JsonFiles/ImagesVk.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Vk/GetImage/Image.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Vk/PublicationWeather.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Vk/PublishResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Vk/WallGet/Post.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Vk/WallGet/WallResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Yandex/FactInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Yandex/Forecast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Yandex/HourWeather.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Models/Yandex/Weather.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Providers/DayTypeProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Providers/ImageTypeProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Providers/VkRequestProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Providers/WeatherStateProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Providers/YandexRequestProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Services/VkService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WeatherBot/Services/WeatherService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WeatherYandex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WeatherYandex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/Calculate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Country.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Fact.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Forecast.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/GeoObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Hour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Info.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Locality.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Province.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Root.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Tzinfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/JSONClasses/Yesterday.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/WeatherBot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/WeatherBot.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/WeatherBot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/ref/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/bin/Debug/net5.0/ref/WeatherBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/WeatherBot.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/ref/WeatherBot.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/ref/WeatherBot.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/WeatherBot.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/WeatherBot.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherBot/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherBot/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WeatherBot/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/02C6517A-9E0B-4C61-81C9-B99D7C490D76/59/HttpRequestMessage.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/233/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CB5AD5F0-2D8D-47B7-8F84-5C504D4C629F/6/ThrowHelper.Serialization.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/WeatherBot/JSONClasses/Hours.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/JSONClasses/Fact.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/ModelsYandex/Fact.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/ModelsYandex/Root.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/ModelsYandex/FactInfo.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/ModelsYandex/Forecast.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/ModelsYandex/Hours.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/HttpClient.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Http.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/HttpRequests.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/VkMethods.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/HttpRequestSender.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Yandex/Forecast.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Yandex/Hours.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Yandex/Root.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Yandex/Weather.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/PublishResponse.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/VkRequest.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/YandexRequest.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Enums/ActivatedType.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/VkRequestProvider.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/YandexRequestProvider.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Calculate.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/YandexMethods.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/WeatherStateProvider.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/VkService.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Yandex/FactInfo.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Yandex/HourWeather.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Http/HttpRequestSender.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Providers/YandexRequestProvider.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Interfaces/IHaveWeatherState.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/WallPost.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/WallResponse.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/Post.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/WallGet/GetWallResponse.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/WallGet/WallResponse.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Providers/WeatherStateProvider.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/PublicationWeather.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Providers/VkRequestProvider.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Enums/DayType.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Services/WeatherService.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Enums/ImageType.cs" />
       <option value="$PROJECT_DIR$/WeatherBot/Program.cs" />
-      <option value="$PROJECT_DIR$/WeatherBot/JSONClasses/Hour.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/GetImage/ImagesGet.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/GetImage/ImagesVk.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/GetImage/Images.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/JsonFiles/ImagesVk.json" />
+      <option value="$PROJECT_DIR$/WeatherBot/Models/Vk/GetImage/Image.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Providers/DayTypeProvider.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Services/VkService.cs" />
+      <option value="$PROJECT_DIR$/WeatherBot/Providers/ImageTypeProvider.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pDOwBUne8ey88Ch3Llx9PXUZwh" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498155" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3195572" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34877896" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.31934878" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -65,6 +187,27 @@
       <workItem from="1614714444773" duration="482000" />
       <workItem from="1614714960266" duration="921000" />
       <workItem from="1614750874130" duration="968000" />
+      <workItem from="1614924705845" duration="1080000" />
+      <workItem from="1614969493046" duration="467000" />
+      <workItem from="1614970309174" duration="1287000" />
+      <workItem from="1615047439134" duration="10434000" />
+      <workItem from="1615111825377" duration="14467000" />
+      <workItem from="1615222818620" duration="2735000" />
+      <workItem from="1615289301409" duration="18226000" />
+      <workItem from="1615328285734" duration="215000" />
+      <workItem from="1615377625697" duration="3475000" />
+      <workItem from="1615398945652" duration="3759000" />
+      <workItem from="1615579125637" duration="11123000" />
+      <workItem from="1617345078717" duration="1244000" />
+      <workItem from="1617953655621" duration="215000" />
+      <workItem from="1617955132318" duration="10776000" />
+      <workItem from="1618207463831" duration="413000" />
+      <workItem from="1618207973596" duration="5848000" />
+      <workItem from="1618225680496" duration="7471000" />
+      <workItem from="1618243727093" duration="7105000" />
+      <workItem from="1618334522268" duration="6809000" />
+      <workItem from="1618486201022" duration="3345000" />
+      <workItem from="1618512049722" duration="1682000" />
     </task>
     <task id="LOCAL-00001" summary="New">
       <created>1614715574238</created>
@@ -95,5 +238,21 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="New" />
     <option name="LAST_COMMIT_MESSAGE" value="New" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints" />
+      </default-breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#WeatherBot.ModelsYandex.Root" memberName="FactInfo" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
