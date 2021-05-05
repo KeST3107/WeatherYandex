@@ -39,7 +39,7 @@
             };
         }
 
-        public async Task<PublicationWeather> GetActualWeather()
+        public async Task<PublicationWeather> GetActualWeatherAsync()
         {
             var yandexWeatherRequest = YandexRequestProvider.GetWeatherRequestMessage(2);
             var weather = await HttpRequestSender.SendRequestAsync<Weather>(yandexWeatherRequest);
@@ -149,9 +149,11 @@
         private (ActivatedType, string) GetActivatedProbability(WallResponse wallResponse)
         {
             var dateNow = DateTimeOffset.Now;
-            var unixBegin = dateNow.AddHours(-1).ToUnixTimeMilliseconds();
-            var unixEnd = dateNow.AddHours(1).ToUnixTimeMilliseconds();
-            var posts = wallResponse.Wall.Posts.Where(x => x.DateUnix > unixBegin && x.DateUnix < unixEnd);
+            var unixBegin = dateNow.AddHours(-1).ToUnixTimeSeconds();
+            var unixEnd = dateNow.AddHours(1).ToUnixTimeSeconds();
+            var posts = wallResponse.Wall.Posts
+                .Where(x => x.DateUnix > unixBegin && x.DateUnix < unixEnd)
+                .ToList();
             foreach (var post in posts)
             {
                 var textPost = post.Text;
@@ -177,7 +179,7 @@
                     else
                     {
                         return (ActivatedType.NotActivated,
-                            $"Актированного не будет (Информация ГО И ЧС)");
+                            $"Актированного нету (Информация ГО И ЧС)");
                     }
                 }
             }

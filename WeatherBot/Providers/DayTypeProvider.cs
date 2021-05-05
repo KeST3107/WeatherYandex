@@ -1,14 +1,12 @@
 namespace WeatherBot.Providers
 {
     using System;
-    using System.ComponentModel;
     using System.Globalization;
-    using System.Linq;
     using WeatherBot.Enums;
 
     public class DayTypeProvider
     {
-        public static DayType GetDayType(DateTime date)
+        public DayType GetDayType(DateTime date)
         {
             if (date.Date.DayOfWeek == DayOfWeek.Sunday) return DayType.Weekend;
 
@@ -19,7 +17,7 @@ namespace WeatherBot.Providers
             return DayType.Weekday;
         }
 
-        private static bool IsHoliday(DateTime mydate)
+        private static bool IsHoliday(DateTime date)
         {
             string[] holiDays =
             {
@@ -28,17 +26,17 @@ namespace WeatherBot.Providers
             };
 
             foreach (var day in holiDays)
-                if (mydate.Date.ToString("dd.MM", CultureInfo.InvariantCulture) == day)
+                if (date.Date.ToString("dd.MM", CultureInfo.InvariantCulture) == day)
                     return true;
             return false;
         }
 
-        private static bool IsSummer(DateTime mydate)
+        private static bool IsSummer(DateTime date)
         {
             string[] summerMonth = {"06", "07", "08"};
 
             foreach (var month in summerMonth)
-                if (mydate.Date.ToString("MM", CultureInfo.InvariantCulture) == month)
+                if (date.Date.ToString("MM", CultureInfo.InvariantCulture) == month)
                     return true;
             return false;
         }

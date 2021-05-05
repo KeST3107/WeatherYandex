@@ -9,24 +9,32 @@ namespace WeatherBot.Providers
         public string GetForecastWeatherState(DateTime date, HourWeather hourWeather)
         {
             var weatherState = GetWeatherState(hourWeather);
+            if (weatherState.Condition != String.Empty)
+            {
+                weatherState.Condition = ", " + weatherState.Condition;
+            }
 
             return string.Format(
-                $"На {date.Date} 6:00 ожидается:\n" +
+                $"На {date.ToShortDateString()} 6:00 ожидается:\n" +
                 $"Температура: {weatherState.Temperature} " +
                 $"ощущается на {weatherState.TemperatureFeelsLike}\n" +
                 $"Ветер: {weatherState.WindDirection} {weatherState.WindSpeed} порывами до {weatherState.WindGust}\n" +
-                $"Влажность: {weatherState.Humidity} Состояние: {weatherState.Cloudness}, {weatherState.Condition} \n");
+                $"Влажность: {weatherState.Humidity} Состояние: {weatherState.Cloudness}{weatherState.Condition} \n");
         }
 
         public string GetCurrentWeatherState(FactInfo factInfo)
         {
             var weatherState = GetWeatherState(factInfo);
+            if (weatherState.Condition != String.Empty)
+            {
+                weatherState.Condition = ", " + weatherState.Condition;
+            }
 
             return string.Format(
                 $"Сейчас:\nТемпература: {weatherState.Temperature} " +
                 $"ощущается на {weatherState.TemperatureFeelsLike}\n" +
                 $"Ветер: {weatherState.WindDirection} {weatherState.WindSpeed} порывами до {weatherState.WindGust}\n" +
-                $"Влажность: {weatherState.Humidity} Состояние: {weatherState.Cloudness}, {weatherState.Condition} \n");
+                $"Влажность: {weatherState.Humidity} Состояние: {weatherState.Cloudness}{weatherState.Condition} \n");
         }
 
         private WeatherState GetWeatherState(IHaveWeatherState model)
@@ -51,11 +59,11 @@ namespace WeatherBot.Providers
             {
                 case "0":
                     return "ясно";
-                case "0.25":
+                case "0,25":
                     return "малооблачно";
-                case "0.5":
+                case "0,5":
                     return "облачно с прояснениями";
-                case "0.75":
+                case "0,75":
                     return "облачно с прояснениями";
                 case "1":
                     return "пасмурно";

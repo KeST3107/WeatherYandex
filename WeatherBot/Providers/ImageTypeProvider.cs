@@ -1,63 +1,30 @@
 namespace WeatherBot.Providers
 {
-    using System;
-    using System.Collections.Generic;
     using System.IO;
-    using Newtonsoft.Json;
-    using WeatherBot.Models.Vk.GetImage;
+    using System.Runtime.Caching;
+    using System.Text.Json;
+    using WeatherBot.Models.LocalJson;
+    using WeatherBot.Services;
     using ActivatedType = WeatherBot.Enums.ActivatedType;
     using DayType = WeatherBot.Enums.DayType;
 
     public class ImageTypeProvider
     {
-        public static string GetImageActual(ActivatedType activatedType, DayType dayType)
+        public string GetImageActual(ActivatedType activatedType, DayType dayType)
         {
-            var images = DeserializeImages();
-            if (dayType == DayType.Weekday)
-                {
-                    switch (activatedType)
-                    {
-                        case ActivatedType.NotActivated:
-                            return images.ActivatedType.FactNotActiated;
-                        case ActivatedType.OneToFive:
-                            return images.ActivatedType.FactOneFive;
-                        case ActivatedType.OneToEight:
-                            return images.ActivatedType.FactOneEight;
-                        case ActivatedType.OneToEleven:
-                            return images.ActivatedType.FactOneEleven;
-                    }
-                }
-                else
-                {
-                    switch (dayType)
-                    {
-                        case DayType.Weekend:
-                            return images.DayType.Weekend;
-                        case DayType.Holiday:
-                            return images.DayType.Holiday;
-                        case DayType.Vacation:
-                            return images.DayType.Vacation;
-                    }
-                }
-            return null;
-        }
-
-
-        public static string GetImageForecast(ActivatedType activatedType, DayType dayType)
-        {
-            var images = DeserializeImages();
+            var imageNames = ExtensionService.GetModelJson<Image>();
             if (dayType == DayType.Weekday)
             {
                 switch (activatedType)
                 {
                     case ActivatedType.NotActivated:
-                        return images.ActivatedType.ForecastNotActiated;
+                        return imageNames.ActivatedType.FactNotActiated;
                     case ActivatedType.OneToFive:
-                        return images.ActivatedType.ForecastOneFive;
+                        return imageNames.ActivatedType.FactOneFive;
                     case ActivatedType.OneToEight:
-                        return images.ActivatedType.ForecastOneEight;
+                        return imageNames.ActivatedType.FactOneEight;
                     case ActivatedType.OneToEleven:
-                        return images.ActivatedType.ForecastOneEleven;
+                        return imageNames.ActivatedType.FactOneEleven;
                 }
             }
             else
@@ -65,22 +32,49 @@ namespace WeatherBot.Providers
                 switch (dayType)
                 {
                     case DayType.Weekend:
-                        return images.DayType.Weekend;
+                        return imageNames.DayType.Weekend;
                     case DayType.Holiday:
-                        return images.DayType.Holiday;
+                        return imageNames.DayType.Holiday;
                     case DayType.Vacation:
-                        return images.DayType.Vacation;
+                        return imageNames.DayType.Vacation;
                 }
             }
+
             return null;
         }
 
-        private static Image DeserializeImages()
+
+        public string GetImageForecast(ActivatedType activatedType, DayType dayType)
         {
-            StreamReader stream = new StreamReader("JsonFiles/ImagesVk.json");
-            string json = stream.ReadToEnd();
-            var images = JsonConvert.DeserializeObject<Image>(json);
-            return images;
+            var imageNames = ExtensionService.GetModelJson<Image>();
+            if (dayType == DayType.Weekday)
+            {
+                switch (activatedType)
+                {
+                    case ActivatedType.NotActivated:
+                        return imageNames.ActivatedType.ForecastNotActiated;
+                    case ActivatedType.OneToFive:
+                        return imageNames.ActivatedType.ForecastOneFive;
+                    case ActivatedType.OneToEight:
+                        return imageNames.ActivatedType.ForecastOneEight;
+                    case ActivatedType.OneToEleven:
+                        return imageNames.ActivatedType.ForecastOneEleven;
+                }
+            }
+            else
+            {
+                switch (dayType)
+                {
+                    case DayType.Weekend:
+                        return imageNames.DayType.Weekend;
+                    case DayType.Holiday:
+                        return imageNames.DayType.Holiday;
+                    case DayType.Vacation:
+                        return imageNames.DayType.Vacation;
+                }
+            }
+
+            return null;
         }
     }
 }

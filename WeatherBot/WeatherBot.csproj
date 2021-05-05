@@ -1,12 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Worker">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="CronScheduler.AspNetCore" Version="3.0.1" />
+      <PackageReference Include="CronScheduler.Extensions" Version="3.0.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+      <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="5.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
       <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="System.Runtime.Caching" Version="5.0.0" />
+      <PackageReference Include="Telegram.Bot" Version="15.7.1" />
     </ItemGroup>
 
 </Project>

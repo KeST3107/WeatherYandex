@@ -7,7 +7,6 @@ namespace WeatherBot.Models.Vk
         [JsonPropertyName("response")]
         public Post Response { get; set; }
 
-
         public class Post
         {
             [JsonPropertyName("post_id")]
